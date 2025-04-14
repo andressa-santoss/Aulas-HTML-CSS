@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contatos</title>
+</head>
+<body>
+
+    <header>
+        <nav>
+            <center>
+                <table cellspacing="20" cellpadding="15">
+                    <thead>
+                        <tr>
+                            <td ><a  href="index.html">Home</a></td>
+                            <td ><a  href="turismo.html">Pontos Turisticos</a></td>
+                            <td ><a  href="curiosidade.html">Curiosidade</a></td>
+                            <td ><a class="contato" href="contato.html">Contato</a></td>
+                        </tr>
+                    </thead>
+                </table>
+            </center>
+        </nav>
+    </header>
+
+   
+    <form action="enviar_dados" method="post">
+        <label for="nome">Digite seu nome: </label><br>
+        <input type="text" id="nome" name="nome" placeholder="Digite seu nome: ">
+        <br><br>
+        <label for="emai">Digite seu email:</label><br>
+        <input type="email" id="emai" name="emai" placeholder="Digite seu E-mail: "><br><br>
+        <label for="text">O que você achou do site? </label><br>
+
+        <input type="checkbox" name="avaliar" value="muitobom">Muito Bom
+        <input type="checkbox" name="avaliar" value="bom">Bom
+        <input type="checkbox" name="avaliar" value="ruim">Ruim
+        <input type="checkbox" name="avaliar" value="pessimo">Péssimo
+        <br><br>
+
+        <label for="indique">Você indicaria esse site?</label>
+        <input type="radio" name="indique" value="sim" checked>Sim indicaria
+        <input type="radio" name="indique" value="nao">Não indicaria
+        <input type="radio" name="indique" value="talvez"> Talvez...
+        <br><br>
+
+        <label for="nota">Qual a nota do site?</label>
+        <select>  
+            <option value="0">Nota Zero</option>
+            <option value="1">Nota Um</option>
+            <option value="2">Nota Dois</option>
+            <option value="3">Nota Três</option>
+        </select><br><br>
+
+        <textarea name="sugestao" rows="10" cols="20" placeholder="Digite sua sugestão" maxlength="5"></textarea><br><br>
+   
+        <br><br>
+        <input type="submit" onclick="alert('Enviado')">
+        <input type="reset" value="Resetar">
+    </form>
+   
+</body>
+</html>
